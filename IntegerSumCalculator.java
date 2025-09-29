@@ -12,9 +12,8 @@ public class IntegerSumCalculator {
 
         String inputLine = scanner.nextLine();
 
-        String[] numberStrings = inputLine.split(" ");g)
+        String[] numberStrings = inputLine.split(" ");
         for (String numberString : numberStrings) {
-
             try {
                 int number = Integer.parseInt(numberString);
                 numbers.add(number);
@@ -26,7 +25,7 @@ public class IntegerSumCalculator {
         int sum = 0;
         for (Integer number : numbers) {
             sum += number;  
-        
+        }
         System.out.println("The sum of the integers is: " + sum);
     
         scanner.close();
